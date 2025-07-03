@@ -1,0 +1,18 @@
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+iris_data = load_iris()
+keys = iris_data.keys()
+print(type(iris_data.feature_names))
+print(len(iris_data.feature_names))
+print(iris_data.feature_names)
+print(len(iris_data.target_names))
+print(iris_data.target_names)
+print(type(iris_data.data))
+print(iris_data.data.shape)
+print(iris_data['data'])
+print(type(iris_data.target))
+print(iris_data.target.shape)
+print(iris_data.target)
